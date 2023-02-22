@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #555555;
+}
+
 .nav-link {
     font-family: "Titillium Web", sans-serif !important;
     font-weight: 700 !important;
@@ -19,9 +23,10 @@
     padding-right: 1.5rem;
 }
 
-body {
-    background-color: #555555;
+.navbar-light {
+    background-color: #fff;
 }
+
 
 .logo {
     width: 132px;
@@ -53,12 +58,22 @@ button{
     box-shadow: 0 0 0 0;
 }
 
+/* Evitar que se cierre el menu al hacer click en cualquier parte */
+.offcanvas-backdrop.fade.show {
+    pointer-events:none 
+   }
+
 @media (max-width: 992px) {
     .navbar {
-        padding-top: 1rem !important;
-        padding-bottom: 1rem !important;
+/*         padding-top: 1rem !important;
+        padding-bottom: 1rem !important; */
         min-height: 70px;
         height: auto;
+    }
+
+    #navbarNav {
+        top: 62px;
+        width: 75%;
     }
 
     .navbar-toggler {
@@ -69,6 +84,13 @@ button{
     .nav-link {
         font-size: 1rem;
     }
+
+    .offcanvas-backdrop.show {
+        opacity: 0;
+      }
+      .offcanvas-backdrop.fade {
+        opacity: 0;
+      }
 }
 
 @media (min-width: 1370px) {
