@@ -145,14 +145,12 @@ ul, li {
 
 
 /* medias */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 992px){
     .text-center{
         margin: 1rem 0rem;
     }
     .text-center img{
-        
         width: 5rem;
-
     }
     .candy-button{
         padding: 0.3rem;
