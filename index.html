@@ -11,14 +11,13 @@
 </head>
 
 <body>
-    <header class="position-fixed w-100">
+    <header class="position-fixed w-100" >
         <nav
             class="navbar navbar-expand-lg navbar-light d-flex justify-content-between pt-0 pb-0 w-100 position-static gap-4 align-items-center">
 
             <div class="">
                 <a href="#">
-
-                    <img src="assets/img/ironhide-logo.png" alt="Kingdom Rush" class="img-fluid logo">
+                    <img src="assets/img/nav/ironhide-logo.png" alt="Kingdom Rush" class="img-fluid logo">
                 </a>
             </div>
 
@@ -35,9 +34,6 @@
                         <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
                             onclick="showMenuNavbar()"></button>
                     </div>
-
-                    <!--                     <div class="offcanvas-body">
-                    </div> -->
 
                     <ul class="navbar-nav d-flex gap-lg-2 gap-1">
                         <li class="nav-item">
@@ -59,17 +55,17 @@
                         </li>
                         <li class="nav-item d-inline-block mx-3 mx-lg-0">
                             <a class="nav-link  text-dark" aria-current="page" href="#">
-                                <img src="assets/img/facebook.png" alt="facebook" class="img-fluid icon">
+                                <img src="assets/img/nav/facebook.png" alt="facebook" class="img-fluid icon">
                             </a>
                         </li>
                         <li class="nav-item d-inline-block me-3 me-lg-0">
                             <a class="nav-link  text-dark" aria-current="page" href="#">
-                                <img src="assets/img/instagram.png" alt="instagram" class="img-fluid icon">
+                                <img src="assets/img/nav/instagram.png" alt="instagram" class="img-fluid icon">
                             </a>
                         </li>
                         <li class="nav-item d-inline-block me-3 me-lg-0">
                             <a class="nav-link  text-dark" aria-current="page" href="#">
-                                <img src="assets/img/youtube.png" alt="youtube" class="img-fluid icon">
+                                <img src="assets/img/nav/youtube.png" alt="youtube" class="img-fluid icon">
                             </a>
                         </li>
                         <li class="nav-item d-inline-block me-3 me-lg-0">
@@ -79,7 +75,7 @@
                         </li>
                         <li class="nav-item d-inline-block">
                             <a class="nav-link  text-dark" aria-current="page" href="#">
-                                <img src="assets/img/discord.png" alt="discord" class="img-fluid icon">
+                                <img src="assets/img/nav/discord.png" alt="discord" class="img-fluid icon">
                             </a>
                         </li>
                     </ul>
@@ -88,29 +84,18 @@
         </nav>
 
     </header>
+
     <main>
 
     </main>
     <footer>
 
     </footer>
-<!--     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
         </script>
-    <script>
-        document.body.addEventListener('click', function (e) {
-            e.stopPropagation()
-        })
-        const menu = document.getElementById('menu');
-        function hiddenMenuNavbar() {
-            menu.style.visibility = 'hidden';
-        }
-        function showMenuNavbar() {
-            menu.style.visibility = 'visible';
-        }
-    </script>
+    <script src="./scripts/nav.js"></script>
 
 </body>
 
