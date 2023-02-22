@@ -10,14 +10,25 @@ body{
     overflow-x: hidden  ;
 }
 
-main, .container-main{
-    min-height: calc(100vh - 4vmax);
+main{
+    top: 4vmax;
+    min-height: calc(90vh - 4vmax - 200px);
+    /* height: calc(50vh - 4vmax) */
+}
+
+main{
+    position: relative;
+}
+
+footer{
+    height: 200px;
 }
 
 
 @media (max-width: 992px) {
-    main, .container-main   {
+    main, .container-main{
         top: 70px;
-        min-height: calc(100vh - 70px);
+        min-height: calc(90vh - 70px -200px);
+        /* height: calc(50vh - 4vmax) */
     }
 }
